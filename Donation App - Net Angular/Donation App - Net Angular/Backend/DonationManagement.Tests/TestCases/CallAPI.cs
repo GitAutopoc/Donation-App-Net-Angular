@@ -39,7 +39,7 @@ namespace DonationManagement.TestCases
             {
                 testResults.TestCaseResults = JsonConvert.SerializeObject(testCaseResults);
                 var testResultsJson = JsonConvert.SerializeObject(testResults);
-                await _httpClient.PostAsync("https://yaksha-prod-sbfn.azurewebsites.net/api/YakshaMFAEnqueue?code=jSTWTxtQ8kZgQ5FC0oLgoSgZG7UoU9Asnmxgp6hLLvYId/GW9ccoLw==", new StringContent(testResultsJson, Encoding.UTF8, "application/json"));
+                await _httpClient.PostAsync("https://yaksha-uat-sbfn.azurewebsites.net/api/YakshaMFAEnqueue?code=b2Nouy31ANrObyhFMwy13abG7P7w9I5ls1XeZcXVBSqlE8VDwzBCRA==", new StringContent(testResultsJson, Encoding.UTF8, "application/json"));
             }
             return status;
         }
